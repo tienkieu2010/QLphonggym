@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="440.0" prefWidth="879.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Hoivienevent">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="186.0" prefWidth="879.0" style="-fx-background-color: #96e3e3;">
+         <children>
+            <Label layoutX="21.0" layoutY="55.0" prefHeight="16.0" prefWidth="72.0" text="Tên hội viên">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Mahv" layoutX="115.0" layoutY="13.0" />
+            <TextField fx:id="Tenhv" layoutX="115.0" layoutY="50.0" />
+            <Label layoutX="309.0" layoutY="55.0" text="Năm sinh">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Namsinh" layoutX="377.0" layoutY="50.0" />
+            <Label layoutX="23.0" layoutY="18.0" text="Mã hội viên">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="309.0" layoutY="18.0" text="Giới tính">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="Gioitinh" layoutX="377.0" layoutY="13.0" prefWidth="150.0" promptText="Chọn" />
+            <Button layoutX="566.0" layoutY="11.0" mnemonicParsing="false" onAction="#membersAddBtn" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #e5bce8;" text="Thêm " />
+            <Button layoutX="662.0" layoutY="11.0" mnemonicParsing="false" onAction="#membersUpdate" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: e5bce8;" text="Sửa " />
+            <TextField fx:id="Diachi" layoutX="115.0" layoutY="92.0" />
+            <Label layoutX="36.0" layoutY="97.0" text="Địa chỉ">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Sdthv" layoutX="377.0" layoutY="92.0" />
+            <Label layoutX="297.0" layoutY="97.0" text="Số điện thoại">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="758.0" layoutY="11.0" mnemonicParsing="false" onAction="#membersClear" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: e5bce8;" text="Làm mới" />
+            <AnchorPane layoutX="582.0" layoutY="51.0" prefHeight="84.0" prefWidth="288.0" style="-fx-border-color: black;">
+               <children>
+                  <ComboBox fx:id="Timkiem_cbb" layoutX="65.0" layoutY="13.0" prefWidth="150.0" promptText="Chọn" />
+                  <Label layoutX="7.0" layoutY="18.0" text="Tìm theo">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Timkiem" layoutX="39.0" layoutY="54.0" />
+                  <Button layoutX="194.0" layoutY="49.0" mnemonicParsing="false" onAction="#membersSearch" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: e5bce8;" text="Tìm kiếm" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="hoivien_tableView" layoutY="146.0" onSort="#setTableViewClickListener" prefHeight="294.0" prefWidth="879.0" style="-fx-border-color: black;" stylesheets="@btn.css">
+         <columns>
+            <TableColumn fx:id="hoivien_col_mahoivien" prefWidth="75.0" text="Mã hội viên" />
+            <TableColumn fx:id="hoivien_col_tenhoivien" prefWidth="75.0" text="Tên hội viên" />
+            <TableColumn fx:id="hoivien_col_diachi" prefWidth="75.0" text="Địa chỉ" />
+            <TableColumn fx:id="hoivien_col_gioitinh" prefWidth="75.0" text="Giới tính" />
+            <TableColumn fx:id="hoivien_col_namsinh" prefWidth="75.0" text="Năm sinh" />
+            <TableColumn fx:id="hoivien_col_sodienthoai" prefWidth="75.0" text="Số điện thoại" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

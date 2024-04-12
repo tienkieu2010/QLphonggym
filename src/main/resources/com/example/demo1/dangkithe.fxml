@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="879.0" style="-fx-background-color: #96e3e3;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Dangkithe">
+    <children>
+        <TableView fx:id="viewTable" layoutY="143.0" prefHeight="298.0" prefWidth="879.0" stylesheets="@btn.css">
+            <columns>
+                <TableColumn fx:id="tbMahoadon" prefWidth="124.79999083280563" text="Mã hóa đơn" />
+                <TableColumn fx:id="tbMahv" prefWidth="203.60001373291016" text="Mã hội viên" />
+                <TableColumn fx:id="tbTengoi" prefWidth="181.99996948242188" text="Tên gói" />
+                <TableColumn fx:id="tbNgaydangki" prefWidth="157.19998168945312" text="Ngày đăng kí" />
+                <TableColumn fx:id="tbNgayhethan" prefWidth="113.4000244140625" text="Ngày hết hạn" />
+                <TableColumn fx:id="tbManv" prefWidth="97.39996337890625" text="Mã nhân viên" />
+            </columns>
+        </TableView>
+        <Label layoutX="28.0" layoutY="18.0" prefHeight="18.0" prefWidth="92.0" text="Mã hội viên" />
+        <Label layoutX="343.0" layoutY="59.0" text="Ngày hết hạn" />
+        <Button fx:id="Them" layoutX="601.0" layoutY="15.0" mnemonicParsing="false" onAction="#Themm" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: d9e8bc;" text="Thêm" />
+        <TextField fx:id="Mahv" layoutX="147.0" layoutY="15.0" />
+        <Label layoutX="343.0" layoutY="19.0" text="Ngày đăng kí" />
+        <Label layoutX="28.0" layoutY="60.0" text="Tên gói" />
+        <TextField fx:id="Mahoadon" layoutX="148.0" layoutY="103.0" />
+        <Label layoutX="28.0" layoutY="107.0" text="Mã hóa đơn" />
+        <Label layoutX="343.0" layoutY="107.0" text="Mã nhân viên" />
+        <DatePicker fx:id="Ngaydangki" editable="false" layoutX="433.0" layoutY="15.0" prefHeight="26.0" prefWidth="150.0" />
+        <DatePicker fx:id="Ngayhethan" editable="false" layoutX="433.0" layoutY="56.0" prefHeight="26.0" prefWidth="150.0" />
+        <Button fx:id="Them1" layoutX="601.0" layoutY="102.0" mnemonicParsing="false" onAction="#Lammoi" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: d9e8bc;" text="Làm mới" />
+        <Button fx:id="Xoa" layoutX="601.0" layoutY="56.0" mnemonicParsing="false" onAction="#xoa" prefHeight="26.0" prefWidth="74.0" text="Xóa" />
+        <ComboBox fx:id="Manv" layoutX="433.0" layoutY="103.0" prefWidth="150.0" />
+        <ComboBox fx:id="Tengoi" layoutX="147.0" layoutY="56.0" prefWidth="150.0" />
+      <AnchorPane blendMode="DARKEN" layoutX="694.0" layoutY="15.0" prefHeight="118.0" prefWidth="181.0" style="-fx-background-color: #DDA0DD;">
+         <children>
+              <Button fx:id="Timkiem" layoutX="53.0" layoutY="85.0" mnemonicParsing="false" onAction="#membersShowData2" prefHeight="26.0" prefWidth="74.0" text="Tìm kiếm" />
+            <Label layoutX="52.0" layoutY="14.0" text="Mã hội viên:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Mahvtk" layoutX="16.0" layoutY="46.0" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

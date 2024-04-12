@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="440.0" prefWidth="879.0" style="-fx-background-color: #96e3e3;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Khutapevent">
+   <children>
+      <TableView fx:id="tableView" layoutX="274.0" prefHeight="440.0" prefWidth="604.0" style="-fx-border-color: green;" stylesheets="@btn.css">
+         <columns>
+            <TableColumn fx:id="tbTenkhuTap" prefWidth="130.40008544921875" text="Tên Khu Tập" />
+            <TableColumn fx:id="tbloaihinhTap" minWidth="0.0" prefWidth="155.199951171875" text="Loại Hình Tập" />
+            <TableColumn fx:id="tbTrangthai" prefWidth="116.80010986328125" text="Trạng Thái" />
+            <TableColumn fx:id="tbManv" prefWidth="190.39990234375" text="Nhân Viên Quản lý" />
+         </columns>
+      </TableView>
+      <Button fx:id="Sua" layoutX="28.0" layoutY="323.0" mnemonicParsing="false" onAction="#membersUpdate" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: e1bce8;" text="Sửa" />
+      <Button fx:id="Them" layoutX="152.0" layoutY="271.0" mnemonicParsing="false" onAction="#Them" prefHeight="26.0" prefWidth="101.0" style="-fx-background-color: e1bce8;" text="Thêm " />
+      <Button fx:id="Xoa" layoutX="151.0" layoutY="323.0" mnemonicParsing="false" onAction="#membersDelete" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: e1bce8;" text="Xóa" />
+      <Label layoutX="28.0" layoutY="154.0" text="Trạng thái:" />
+      <Label layoutX="28.0" layoutY="99.0" text="Loại hình tập:" />
+      <Label layoutX="28.0" layoutY="45.0" prefHeight="18.0" prefWidth="80.0" text="Tên khu tập:" />
+      <Button fx:id="Lammoi" layoutX="28.0" layoutY="271.0" mnemonicParsing="false" onAction="#membersClears" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: e1bce8;" text="Làm mới" />
+      <Text layoutX="28.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã nhân viên:" />
+      <ComboBox fx:id="Trangthai" layoutX="116.0" layoutY="150.0" prefWidth="150.0" />
+      <ComboBox fx:id="Manv" layoutX="116.0" layoutY="205.0" prefWidth="150.0" />
+      <TextField fx:id="LoaihinhTap" layoutX="117.0" layoutY="95.0" />
+      <TextField fx:id="Tenkhutap" layoutX="117.0" layoutY="42.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="879.0" style="-fx-background-color: #96e3e3;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Nhanvienevent">
+    <TableView fx:id="nhanvien_tableView" layoutX="4.0" layoutY="139.0" prefHeight="300.0" prefWidth="870.0" stylesheets="@btn.css">
+        <columns>
+            <TableColumn fx:id="nhanvien_col_manv" prefWidth="89.60000610351562" text="Mã nhân viên" />
+            <TableColumn fx:id="nhanvien_col_tennv" minWidth="0.0" prefWidth="308.00001525878906" text="Tên nhân viên" />
+            <TableColumn fx:id="nhanvien_col_taikhoan" prefWidth="164.79998779296875" text="Tài khoản" />
+            <TableColumn fx:id="nhanvien_col_matkhau" minWidth="0.0" prefWidth="119.20001220703125" text="Mật khẩu" />
+            <TableColumn fx:id="nhanvien_col_sdt" prefWidth="189.59991455078125" text="Số điện thoại" />
+        </columns>
+    </TableView>
+    <TextField fx:id="MaNv" layoutX="124.0" layoutY="16.0" promptText="Nhập mã nhân viên" />
+    <TextField fx:id="TenNv" layoutX="124.0" layoutY="59.0" promptText="Nhập tên nhân viên" />
+    <TextField fx:id="Sdt" layoutX="321.0" layoutY="103.0" promptText="Nhập số điện thoại" />
+    <Label layoutX="22.0" layoutY="63.0" />
+    <Button fx:id="Nhanvien_thembtn" layoutX="715.0" layoutY="24.0" mnemonicParsing="false" onAction="#membersAddbtn" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: e0e8a9;" text="Thêm" />
+    <Button fx:id="Nhanvien_suabtn" layoutX="596.0" layoutY="62.0" mnemonicParsing="false" onAction="#membersUpdate" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: e0e8a9;" text="Sửa" />
+    <Button fx:id="Nhanvien_xoabtn" layoutX="596.0" layoutY="24.0" mnemonicParsing="false" onAction="#membersDelete" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: e0e8a9;" text="Xóa" />
+    <Label layoutX="375.0" layoutY="63.0" />
+    <TextField fx:id="Taikhoan" layoutX="382.0" layoutY="15.0" promptText="Nhập tài khoản" />
+    <TextField fx:id="Matkhau" layoutX="382.0" layoutY="59.0" promptText="Nhập mật khẩu" />
+    <Button layoutX="715.0" layoutY="62.0" mnemonicParsing="false" onAction="#membersClear" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: e0e8a9;" text="Làm mới" />
+    <Label layoutX="22.0" layoutY="20.0" text="Mã nhân viên" />
+    <Label layoutX="21.0" layoutY="63.0" text="Tên nhân viên" />
+    <Label layoutX="238.0" layoutY="107.0" text="Số điện thoại" />
+    <Label layoutX="296.0" layoutY="20.0" text="Tài khoản" />
+    <Label layoutX="297.0" layoutY="63.0" text="Mật khẩu" />
+</AnchorPane>

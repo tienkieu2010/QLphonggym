@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="416.0" prefWidth="1083.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Thongkedoanhthutheongay">
+   <children>
+      <LineChart fx:id="baocaodoanhthu_tc" layoutX="29.0" layoutY="21.0" prefHeight="350.0" prefWidth="691.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" upperBound="2000000.0" />
+        </yAxis>
+      </LineChart>
+      <Label layoutX="8.0" layoutY="21.0" prefHeight="18.0" prefWidth="34.0" text="Thu" />
+      <Label layoutX="217.0" layoutY="371.0" prefHeight="30.0" prefWidth="402.0" text="Sơ đồ báo cáo doanh thu theo từng ngày trong 10 ngày gần nhất">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TableView fx:id="thongkengay_tblv" layoutX="786.0" layoutY="62.0" prefHeight="323.0" prefWidth="282.0" stylesheets="@btn.css">
+        <columns>
+          <TableColumn fx:id="Ngay_tbcl" prefWidth="146.39990234375" text="Ngày/tháng/năm" />
+          <TableColumn fx:id="doanhthu_tbcl" prefWidth="135.2000732421875" text="Doanh thu" />
+        </columns>
+      </TableView>
+      <Button layoutX="720.0" layoutY="165.0" mnemonicParsing="false" onAction="#membersShowData" prefHeight="26.0" prefWidth="62.0" text="==&gt;" />
+   </children>
+</AnchorPane>

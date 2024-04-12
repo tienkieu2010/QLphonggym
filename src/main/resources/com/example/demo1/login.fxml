@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Loginevent">
+    <left>
+        <AnchorPane prefHeight="430.0" prefWidth="750.0" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane layoutX="493.0" opacity="0.93" prefHeight="400.0" prefWidth="219.0" style="-fx-background-color: #98FB98;">
+                    <children>
+                        <Label layoutX="55.0" layoutY="40.0" text="ĐĂNG NHẬP" textFill="#bc259b">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="TaiKhoan" blendMode="MULTIPLY" layoutX="34.0" layoutY="174.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+                        <Button id="green" fx:id="Dangnhap_btn" layoutX="69.0" layoutY="314.0" mnemonicParsing="false" onAction="#Login" stylesheets="@btn.css" text="Đăng Nhập">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                        <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="76.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/dnhap.png" />
+                            </image>
+                        </ImageView>
+                  <Button layoutX="100.0" layoutY="276.0" mnemonicParsing="false" onAction="#Quenmatkhau" style="-fx-background-color: transparent;" text="Quên mật khẩu" textFill="#1740bc" textOverrun="CLIP">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="275.0" mnemonicParsing="false" onAction="#Doimatkhau" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: transparent;" text="Đổi mật khẩu">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="imagelogin" blendMode="MULTIPLY" fitHeight="15.0" fitWidth="22.0" layoutX="187.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true" />
+                  <TextField fx:id="Matkhau2" layoutX="34.0" layoutY="224.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+                  <PasswordField fx:id="MatKhau" blendMode="MULTIPLY" layoutX="34.0" layoutY="224.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+                  <ImageView blendMode="MULTIPLY" fitHeight="20.0" fitWidth="18.0" layoutX="5.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/img_6.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView blendMode="MULTIPLY" fitHeight="21.0" fitWidth="18.0" layoutX="5.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/img_7.png" />
+                     </image>
+                  </ImageView>
+                    </children>
+                </AnchorPane>
+                <ImageView fitHeight="400.0" fitWidth="494.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/nengym2-2.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+</BorderPane>
